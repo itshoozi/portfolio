@@ -1,0 +1,85 @@
+:root {
+  --color: rgb(176,189,243);
+  --background1: rgb(29,30,30);
+  /*--background1: url("https://cdn.discordapp.com/attachments/739593151320293516/789602768762830868/20201218_151903.jpg") center / cover no-repeat;*/
+}
+
+body {
+  height: 100vh;
+  border-width: 7px;
+  background: var(--background1);
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  text-align: center;
+  animation: bg-anim 30s ease infinite;
+  color: var(--color);
+}
+
+.card {
+  transition: all 0.20s linear;
+  border-radius: 1px;
+  align-items: center;
+  padding: 33px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 4px 4px 4px 0px var(--color);
+  border-radius: 28px;
+}
+
+.card-text:last-child {
+  color: var(--color);
+}
+
+card:hover .img {
+  border-radius: 10px;
+}
+
+.parent:hover img:not(:hover) {
+  border-radius: 28px;
+}
+
+.parent img {
+  transition: all 0.20s linear;
+}
+
+.imgc:hover {
+  transform: translateY(-8px);
+  border-radius: 28px;
+  transition: all 0.20s linear;
+}
+
+.owo {
+  margin-right: 10px;
+  transition: all 0.20s linear;
+  border-style: solid;
+  border-color: var(--color);
+  color: var(--color);
+}
+
+.owo:hover {
+  transform: translateY(-8px);
+  border-radius: 28px;
+  color: var(--color);
+  border-bottom-right-radius: 28px;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+
+.parent:hover .owo:not(:hover) {
+  border-radius: 29px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color);
+}
+
